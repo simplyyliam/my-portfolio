@@ -1,10 +1,12 @@
-
+import { Header, Wrapper } from "../../ui";
 
 
 export default function Home() {
-    return (
-        <div className="flex items-center justify-center w-full h-full">
-            Hello Home
-        </div>
-    )
+  return (
+    <Wrapper>
+       <div className="flex h-100 w-full">
+        <Header/>
+       </div>
+    </Wrapper>
+  );
 }

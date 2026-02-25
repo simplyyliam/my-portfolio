@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-
 export default function Layout() {
-    return (
-        <div className="w-screen h-screen">
-            <Outlet/>
-        </div>
-    )
+  return (
+    <div className="flex w-screen h-screen items-center justify-center">
+      <Outlet />
+    </div>
+  );
 }
