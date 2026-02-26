@@ -125,4 +125,9 @@
 
 .dotted {
   text-decoration: underline dotted 2.5px;
+  color: var(--muted-foreground);
+}
+
+button {
+  cursor: pointer;
 }

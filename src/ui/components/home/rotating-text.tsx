@@ -13,7 +13,7 @@ export function RotatingText() {
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           exit={{ y: -13, opacity: 0, filter: "blur(4px)" }}
           transition={{ duration: 0.45, ease: "easeOut" }}
-          className="dotted text-muted-foreground"
+          className="dotted"
         >
           {interest}
         </motion.span>

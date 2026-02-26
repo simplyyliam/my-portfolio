@@ -35,7 +35,7 @@ export function Project() {
         >
           <motion.div
             variants={{
-              rest: { x: -8  },
+              rest: { x: -8 },
               hover: { x: 0 },
             }}
           >
@@ -49,8 +49,10 @@ export function Project() {
             rest: { x: 0 },
             hover: { x: 4 },
           }}
+          className="flex gap-2"
         >
-          ThemeStudio
+          <span>ThemeStudio</span>
+          <span className="dotted">Theme your VS Code with ease</span>
         </motion.span>
       </div>
       <span>2026</span>
