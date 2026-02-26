@@ -1,11 +1,10 @@
 import { useTextLoop } from "@/hooks";
 import { AnimatePresence, motion } from "motion/react";
 export function RotatingText() {
-
-  const interest = useTextLoop(['Developer', 'Designer'])
+  const interest = useTextLoop(["Developer", "Designer"]);
 
   return (
-    <div className="flex items-center w-40 h-12 overflow-hidden">
+    <div className="flex items-center w-40 h-12 overflow-hidden sm:w-40">
       <AnimatePresence mode="wait">
         <motion.span
           key={interest}

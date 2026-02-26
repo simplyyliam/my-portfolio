@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { motion } from "motion/react";
 
-export function Profiles ()  {
+export function Profiles() {
   const swap = {
     initial: (dir: number) => ({
       x: 0,
@@ -15,13 +15,13 @@ export function Profiles ()  {
 
   return (
     <motion.div
-      className="flex -space-x-4"
+      className="flex -space-x-4 sm:-space-x-4"
       // Variant labels
-      initial="initial" 
-      whileHover="hover" 
+      initial="initial"
+      whileHover="hover"
     >
       <motion.div
-      // Variant Controller
+        // Variant Controller
         variants={swap}
         // Custom injects values into variant methods (dir: number)
         custom={1}
@@ -44,4 +44,4 @@ export function Profiles ()  {
       </motion.div>
     </motion.div>
   );
-};
+}
