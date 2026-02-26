@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export const useTextLoop = (texts: string[], delay = 2000) => {
+export const useTextLoop = (texts: string[], delay = 5000) => {
   const [idx, setIdx] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {

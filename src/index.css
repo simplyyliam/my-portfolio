@@ -121,3 +121,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.dotted {
+  text-decoration: underline dotted 2.5px;
+}

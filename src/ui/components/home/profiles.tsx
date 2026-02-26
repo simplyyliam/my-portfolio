@@ -5,22 +5,25 @@ export function Profiles ()  {
   const swap = {
     initial: (dir: number) => ({
       x: 0,
-      zIndex: dir === 0.1 ? 0.2 : 0.1,
+      zIndex: dir > 1 ? 2 : 1,
     }),
     hover: (dir: number) => ({
       x: dir * 20,
-      zIndex: dir === 0.1 ? 0.1 : 0.2,
+      zIndex: dir > 1 ? 1 : 2,
     }),
   };
 
   return (
     <motion.div
       className="flex -space-x-4"
-      initial="initial"
-      whileHover="hover"
+      // Variant labels
+      initial="initial" 
+      whileHover="hover" 
     >
       <motion.div
+      // Variant Controller
         variants={swap}
+        // Custom injects values into variant methods (dir: number)
         custom={1}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
