@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { motion } from "motion/react";
 
-export const Profiles = () => {
+export function Profiles ()  {
   const swap = {
     initial: (dir: number) => ({
       x: 0,
