@@ -5,7 +5,8 @@ export default function Home() {
     <div className="flex w-full flex-col items-center justify-center gap-6 px-4 sm:flex-row sm:items-start sm:gap-5 sm:px-10 ">
       <div className="relative aspect-square w-full max-w-60 sm:w-60 sm:max-w-md">
         <iframe
-          src="https://commit-sphere.vercel.app/embed?user=simplyyliam"
+          src={`${"https://commit-sphere.vercel.app/embed"
+          }?user=simplyyliam?year=2026`}
           title="Commit Sphere for simplyyliam"
           className="absolute inset-0 h-full w-full rounded border-[0.75px]"
         />
