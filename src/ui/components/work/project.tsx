@@ -54,8 +54,8 @@ export function Project() {
           }}
           className="flex gap-2 flex-wrap"
         >
-          <span>ThemeStudio</span>
-          <span className="dotted">Theme your VS Code with ease</span>
+          <span>Commit Sphere</span>
+          <span className="dotted">A simple, elegant way to visualize your GitHub commits in 3D space.</span>
         </motion.span>
       </div>
 
