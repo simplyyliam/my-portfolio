@@ -6,7 +6,7 @@ export default function Home() {
       <div className="relative aspect-square w-full max-w-60 sm:w-60 sm:max-w-md">
         <iframe
           src={`${"https://commit-sphere.vercel.app/embed"
-          }?user=simplyyliam?year=2026`}
+          }?user=simplyyliam`}
           title="Commit Sphere for simplyyliam"
           className="absolute inset-0 h-full w-full rounded border-[0.75px]"
         />
