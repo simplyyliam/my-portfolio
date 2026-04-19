@@ -1,4 +1,5 @@
-import { Builds, Header, Wrapper } from "../../ui";
+import { Builds, Header, Wrapper } from "../../ui"
+import { PopoverWrapper } from "@simplyyliam/popover"
 
 export default function Home() {
   return (
@@ -13,14 +14,41 @@ export default function Home() {
       <Wrapper>
         <div className="flex h-auto w-full flex-col gap-2.5 sm:h-100">
           <Header />
-          <p>
-            Design engineer in the making. Focused on interaction, motion, and
-            thoughtful craftsmanship. Self-taught, creatively driven, and always
-            iterating. Think → Craft → Repeat.
-          </p>
+          <PopoverWrapper
+            popovers={[
+              {
+                word: "interaction",
+                title: "Why honey never spoils",
+                body: [
+                  {
+                    type: "text",
+                    content:
+                      "Honey's low moisture content and hydrogen peroxide production make it inhospitable to bacteria. It's basically a natural preservative.",
+                  },
+                  {
+                    type: "links",
+                    items: [
+                      {
+                        label: "The science behind it",
+                        url: "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/",
+                      },
+                    ],
+                  },
+                ],
+                footer: "Fun fact",
+              },
+            ]}
+className="text-start"
+          >
+            <p>
+              Design engineer in the making. Focused on interaction, motion, and
+              thoughtful craftsmanship. Self-taught, creatively driven, and
+              always iterating. Think → Craft → Repeat.
+            </p>
+          </PopoverWrapper>
           <Builds />
         </div>
       </Wrapper>
     </div>
-  );
+  )
 }
